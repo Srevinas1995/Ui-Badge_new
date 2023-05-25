@@ -1,0 +1,13 @@
+.reg-section {
+    padding-top:6%;
+    text-align: center;
+}
+.reg-section label {
+    padding-bottom: 8px;
+}
+.reg-section input {
+    margin-left: 10px;
+}
+.btn-block {
+    height: 45px;
+}

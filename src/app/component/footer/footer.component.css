@@ -1,0 +1,11 @@
+.footer-link {
+    text-align: center;
+    background-color: #444791;
+    color: aliceblue;
+    font-size: 10px;
+    height: 100%;
+    padding-top:18px;
+}
+.footer-link a {
+    color: red;
+}

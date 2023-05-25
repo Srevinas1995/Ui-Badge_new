@@ -1,0 +1,58 @@
+<div class="row m-0 p-0">
+  <div class="col-md-12">
+    <div class="header-section">
+      <app-header></app-header>
+    </div>
+    <div class="content-section">
+      <div class="travel-section">
+        <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+          <div class="group-gap">
+            <div class="d-block my-3">
+              <div class="mb-3">
+                <select
+                  class="custom-select"
+                  (change)="changeCity($event)"
+                  formControlName="cityName"
+                >
+                  <option value="">Choose your Location</option>
+                  <option *ngFor="let city of City" [ngValue]="city">
+                    {{ city }}
+                  </option>
+                </select>
+
+                <!-- error block -->
+                <div
+                  class="invalid-feedback"
+                  *ngIf="isSubmitted && cityName.errors?.required"
+                >
+                  <sup>*</sup>Please enter your location name
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MATERIAL TEXTAREA STARTS -->
+<div class="col-12 float-left mt-2 custom-textarea">
+  <h6 class="float-left col-12 no_pad" id="mattxt">Please drop for valueable recommendations!</h6>
+  <form class="col-12 no_pad">
+    <mat-form-field class="col-12 no_pad">
+      <mat-label>Leave a comment</mat-label>
+      <textarea matInput #matTextarea placeholder="Type here"  aria-labelledby="mattxt" (keyup)="0" maxlength="500"
+        class="resize-none"></textarea>
+    </mat-form-field>
+  </form>
+  <span class="float-left col-12 no_pad text-right mt-1 f-12">{{ matTextarea.value.length }} / 500</span>
+</div>
+<!-- MATERIAL TEXTAREA ENDS -->
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary btn-lg btn-block">
+            Submit
+          </button>
+        </form>
+        <!-- Form ends -->
+      </div>
+    </div>
+    <div class="footer-section">
+      <app-footer></app-footer>
+    </div>
+  </div>
+</div>

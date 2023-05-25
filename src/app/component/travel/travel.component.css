@@ -1,0 +1,51 @@
+.travel-section {
+    padding-left: 45%;
+    padding-top: 20%;
+}
+.travel-section select {
+    height: 42px;
+    width: 80%;
+    border-radius: 8px;
+}
+
+
+/* text area  */
+
+.textarea {
+    border: 1px solid #DEDEDF;
+    border-radius: 4px;
+    resize: none;
+    height: 77px;
+    padding: 10px;
+    &:focus {
+        outline : none;
+    }
+}
+.resize-none{
+    resize: none;
+}
+.f-12{
+    font-size: 12px;
+}
+h6 {
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+.no_pad {
+    padding-left :0px;
+    padding-right:0px;
+}
+::ng-deep .custom-textarea {
+    .mat-input-element {
+        color: black;
+    }
+    .mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+        color: gray;
+        font-size: 12px;
+    }
+    .mat-form-field-ripple, 
+    .mat-form-field.mat-focused .mat-form-field-ripple,
+    .mat-form-field.mat-focused .mat-form-field-ripple.mat-accent {
+        background-color: gray;
+    }
+}

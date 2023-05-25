@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.header-section {
+    height: 10vh;
+}
+.content-section {
+    height: 82vh;
+    /* background: url('../assets/background/home-page.avif'); */
+}
+.footer-section {
+    height: 8vh;
+}
+.quotes {
+    color: red;
+    font-size: 20px;
+    padding-top: 50px;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quotes ul {
+    list-style-type: disclosure-closed;
+}
+.quotes ul li {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}

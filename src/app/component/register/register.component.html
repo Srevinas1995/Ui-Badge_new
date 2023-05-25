@@ -1,0 +1,30 @@
+<div class="row m-0 p-0">
+    <div class="col-md-12">
+      <div class="header-section">
+        <app-header></app-header>
+      </div>
+      <div class="content-section">
+        <div class="reg-section">
+            <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+                <label> Name: <input type="text"  name="name" required>
+                </label>
+                <br>
+                <label> Email: <input type="email"  name="email" required>
+                </label>
+                <br>
+                <label> Mobile: <input type="password"  name="password" required>
+                </label>
+                <br>
+              
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+            </form><!-- Form ends -->
+        </div>
+      </div>
+      <div class="footer-section">
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </div>
+

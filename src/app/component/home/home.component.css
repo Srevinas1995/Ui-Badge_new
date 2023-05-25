@@ -1,0 +1,202 @@
+.card-cls{
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 15px;
+    height: auto;
+    border: 1px solid #D4D4D5;
+}
+.empdet-rgt{
+    padding: 10px 0px 0px 15px;
+}
+.name-textin {
+    color: #37456C;
+    font-size: 22px;
+    font-family: "WiproAkkuratTT-Regular";
+    text-align: center;
+    width: 100%;
+}
+.ind-status {
+    position: relative;
+    padding: 0px 0px 0px 15px;
+    font-size: 12px;
+}
+.ind-status:before {
+    content:"";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    background-color: #0089CF;
+    z-index: 99;
+}
+.photo-cls {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #D3DEFC;
+    align-items: center;
+    display: flex;
+}
+.firstlet-cap::first-letter {
+    text-transform: capitalize;
+  }
+.status-reminder {
+    margin: 5px 0px 20px 0px;
+    display: flex;
+  }
+.status-cls:nth-child(2) {
+    padding-left: 20px;
+  }
+  .status-cls:nth-child(2)+.status-cls {
+    padding-left: 15px;
+  }
+  .status-hdng{
+    color: #0089CF;
+    font-family: "WiproAkkuratTT-Bold";
+    font-size: 12px;
+  }
+  .tag-text {
+    color: #37456C;
+    font-size: 14px;
+  }
+  .emp-desg {
+    color: #0089CF;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  .emp-name,.emp-num {
+    color: #37456C;
+    font-size :12px;
+  }
+  .emp-name{
+    font-family: "WiproAkkuratTT-Bold";
+    font-size: 14px;
+  }
+  .emp-det-dwn {
+    color: #37456C;
+    margin: 5px 0px 10px 0px;
+    font-size: 12px;
+  }
+  .hyph-cls {
+    margin: 0px 10px;
+  }
+  .primary-btn, .primary-btn:focus{
+    width: 110px;
+    height: 36px;
+    color: #0089CF;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E0E1E2;
+    box-shadow: none;
+    border-radius: 4px;
+    letter-spacing: 0px;
+    font-size: 14px;
+    outline :none;
+    font-family: "WiproAkkuratTT-Bold";
+    &:hover {
+      background-color:#0089CF 0% 0% no-repeat padding-box;
+      color: #000000;
+      border: none;
+      box-shadow: 0px 3px 6px #00000033;
+    }
+}
+.no_pad {
+  padding-left :0px;
+  padding-right:0px;
+}
+.gap20 {
+    gap: 20px;
+}
+
+/* carousel  */
+.leftRs {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.3);
+    border-radius: 999px;
+    left: 0;
+    border: none;
+    margin: auto 2px;
+  }
+
+  .rightRs {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.3);
+    border-radius: 999px;
+    right: 0;
+    border: none;
+    margin: auto 2px;
+  }
+  .bannerStyle h1 {
+    min-height: 300px;
+    text-align: center;
+    line-height: 300px;
+  }
+  .carousel-height{
+    height: 320px;
+    /* img{
+      height: 320px;
+      width: 100%;
+    } */
+  }
+
+  button:focus{
+    outline: none;
+    border:none;
+  }
+  h5 {
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-family: "WiproAkkuratTT-Bold";
+}
+.no_pad {
+  padding-left :0px;
+  padding-right:0px;
+}
+.btn-download, .btn-download:focus{
+  width: 95px;
+  height: 36px;
+  color: #0089CF;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #E0E1E2;
+  border-radius: 4px;
+  letter-spacing: 0px;
+  font-size: 14px;
+  outline:none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "WiproAkkuratTT-Bold";
+  &:hover {
+    background-color: #0089CF 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    border: none;
+    box-shadow: 0px 3px 6px #00000033;
+  }
+  &:before {
+    font-size: 14px;
+    position: relative;
+    right: 4px;
+  }
+  &:focus {
+    outline:none;
+  }
+ 
+}
+a {
+  color: #0089CF;
+  &:hover {
+      text-decoration: none;
+  }
+  &:focus {
+      outline:none;
+  }
+}
